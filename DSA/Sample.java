@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sample {
+public class PrintSubArray {
 
     public static void printSubAarray(int numbers[]) {
         int ts = 0;
