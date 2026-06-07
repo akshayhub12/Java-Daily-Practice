@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;BootMVCProj09-MiniProject-CURDOperations&apos;" deleteContents="false" description="Delete resource &apos;BootMVCProj09-MiniProject-CURDOperations&apos;" element1="/BootMVCProj09-MiniProject-CURDOperations" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1744026707599"/>
+</session>

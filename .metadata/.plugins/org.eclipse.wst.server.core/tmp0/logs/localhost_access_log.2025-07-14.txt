@@ -1,0 +1,8 @@
+127.0.0.1 - - [14/Jul/2025:00:38:01 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [14/Jul/2025:00:38:05 +0530] "GET /BootMVCProj09-MiniProject-CURDOperations/ HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [14/Jul/2025:00:38:06 +0530] "GET /BootMVCProj09-MiniProject-CURDOperations/images/report.jpg HTTP/1.1" 200 4816
+0:0:0:0:0:0:0:1 - - [14/Jul/2025:00:38:06 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [14/Jul/2025:00:38:11 +0530] "GET /BootMVCProj09-MiniProject-CURDOperations/report HTTP/1.1" 200 290
+0:0:0:0:0:0:0:1 - - [14/Jul/2025:00:38:11 +0530] "GET /BootMVCProj09-MiniProject-CURDOperations/images/home.jpg HTTP/1.1" 200 2469
+0:0:0:0:0:0:0:1 - - [14/Jul/2025:00:38:14 +0530] "GET /BootMVCProj09-MiniProject-CURDOperations/ HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [14/Jul/2025:00:38:17 +0530] "GET /BootMVCProj09-MiniProject-CURDOperations/report HTTP/1.1" 200 290

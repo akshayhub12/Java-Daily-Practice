@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Aug 18 16:03:29 IST 2025
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\hp\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-jasper\\11.0.5\\tomcat-embed-jasper-11.0.5.jar=WEB-INF/lib/tomcat-embed-jasper-11.0.5.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\hp\\.m2\\repository\\org\\springframework\\spring-web\\6.2.5\\spring-web-6.2.5.jar=WEB-INF/lib/spring-web-6.2.5.jar

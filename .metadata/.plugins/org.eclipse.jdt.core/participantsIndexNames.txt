@@ -1,0 +1,9 @@
+INDEX VERSION 1.134
+A:\New Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\219566776.index
+\BootMVCProj09-MiniProject-CURDOperations\src\main\java
+A:\New Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\192440042.index
+\BootMVCProj09-MiniProject-Part-31\src\main\java
+A:\New Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1631296604.index
+\BootMVCProj09-MiniProject-PArt-2\src\main\java
+A:\New Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4274984138.index
+\BootMVCProj09-MiniProject-Part-2\src\main\java

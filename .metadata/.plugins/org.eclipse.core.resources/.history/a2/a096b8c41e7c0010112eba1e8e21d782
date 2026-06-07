@@ -1,0 +1,17 @@
+package com.nt.service;
+
+import java.util.List;
+
+import com.nt.entity.Employee;
+
+public interface IEmployeeMgmtService {
+    public List<Employee> showAllEmployeess();
+    public String registerEmployee(Employee emp);
+    
+    // New methods for editing
+    public Employee getEmployeeById(int id);
+    public String updateEmployee(Employee emp);
+    public String deleteEmployeeById(int empNo);
+
+    Object searchEmployeesById(int empno);
+}

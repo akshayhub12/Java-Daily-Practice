@@ -1,0 +1,59 @@
+package com.nt.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.entity.Employee;
+import com.nt.repository.IEmployeeRepository;
+
+@Service
+public class EmployeeMgmtServiceImpl implements IEmployeeMgmtService {
+	@Autowired
+	private IEmployeeRepository employeeRepo;
+
+	@Override
+	public List<Employee> showAllEmployeess() {
+		return employeeRepo.findAll();
+	}
+
+	@Override
+	public String registerEmployee(Employee emp) {
+		Employee saved = employeeRepo.save(emp);
+		return "Employee is saved with id value: " + saved.getEmpno();
+	}
+
+	@Override
+	public Employee getEmployeeById(int id) {
+		Optional<Employee> opt = employeeRepo.findById(id);
+		if (opt.isPresent()) {
+			return opt.get();
+		} else {
+			throw new IllegalArgumentException("Employee not found with ID: " + id);
+		}
+	}
+
+	@Override
+	public String updateEmployee(Employee emp) {
+		// Hibernate will automatically check @Version field
+		Employee updated = employeeRepo.save(emp);
+		return "Employee updated successfully with ID: " + updated.getEmpno();
+	}
+	
+	@Override
+	public String deleteEmployeeById(int empNo) {
+	    // ensure it exists (optional)
+	    Employee existing = employeeRepo.findById(empNo)
+	        .orElseThrow(() -> new IllegalArgumentException("No employee with ID " + empNo));
+	    employeeRepo.deleteById(empNo);
+	    return "Employee (ID=" + empNo + ") deleted successfully.";
+	}
+
+	
+	  @Override
+	    public Object searchEmployeesById(int empNo) {
+	        return employeeRepo.findById(empNo);
+	    }
+}
