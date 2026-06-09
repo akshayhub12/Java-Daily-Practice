@@ -2,26 +2,22 @@ import java.util.*;
 
 public class Sample {
 
-    public static void revers(int nums[]) {
-
-        int start = 0, end = nums.length - 1;
-
-        while (start < end) {
-            
-            int temp = nums[end];
-            nums[end] = nums[start];
-            nums[start] = temp;
-
-            start++;
-            end--;
+    public static void kadanes(int nums[]) {
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+        for(int i=0; i<nums.length; i++) {
+            int start = i;
+            for(int j=i; j<nums.length; j++) {
+                int end = j;
+                for (int k= start; k <end; k++) {
+                    currSum = currSum + nums[k];
+                }
+            }
         }
     }
 
     public static void main(String[] args) {
-        int nums[] = { 2, 4, 6, 8, 10, 12 };
-        revers(nums);
-        for (int i : nums) {
-            System.out.print(i + " ");
-        }
+        int nums[] = { -1, -2, -3, -4 };
+        kadanes(nums);
     }
 }
