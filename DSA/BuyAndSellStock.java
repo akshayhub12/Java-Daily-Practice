@@ -1,21 +1,20 @@
 public class BuyAndSellStock {
-    
-    public static int buyAndSellStocks(int prices[]) {
-        int buyPrice = Integer.MAX_VALUE;
-        int maxProfit = 0;
 
-        for (int i =0; i <prices.length; i++) {
-            if (buyPrice < prices[i]) { // profit
-                int profit = prices[i] - buyPrice;  // today's profit
-                maxProfit = Math.max(maxProfit, profit);
-            } else {
-                buyPrice = prices[i];
+    public static boolean appearTwice(int nums[]) {
+        int n = nums.length - 1;
+        for (int i= 0; i<n; i++) {
+            int start = i;
+            for (int j= i+1; j<n; j++) {
+                if (nums[i]==nums[j]) {
+                    return false;
+                }
             }
         }
-        return maxProfit;
+        return true;
     }
+
     public static void main(String[] args) {
-        int prices[] = { 7, 1, 5, 3, 6, 4};
-        System.out.println(buyAndSellStocks(prices));
+        int nums[] = { 7, 1, 5, 3, 6, 4 };
+        System.out.println(appearTwice(nums));
     }
 }
