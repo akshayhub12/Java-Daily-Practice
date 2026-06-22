@@ -8,7 +8,7 @@ public class DuplicateInArray {
 
             for (int j = i + 1; j < n; j++) {
 
-                if (nums[i] == nums[j]) {
+                if (nums[i] == nums[j]) {      // comparison
                     return true;
                 }
             }
